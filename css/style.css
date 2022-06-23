@@ -18,6 +18,14 @@ h2 {
   margin-bottom: 22px;
 }
 
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 h4 {
   font-family: 'Source Code Pro', monospace;
   font-weight: 400;
@@ -28,7 +36,7 @@ h4 {
 h5 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -42,6 +50,13 @@ p {
   font-size: 22px;
   line-height: 150%;
   padding-bottom: 44px;
+  text-align: justify;
+}
+
+li {
+  font-family: 'PT Serif', serif;
+  font-size: 22px;
+  padding-bottom: 20px;
 }
 
 .intro {
@@ -117,4 +132,8 @@ a:hover {
 .col-centered {
   float: none;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }

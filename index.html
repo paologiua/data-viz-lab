@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,9 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700,700i|Source+Code+Pro|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700,700i|Source+Code+Pro|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+    rel="stylesheet">
   <link rel="icon" href="./media/favicon.ico">
 
   <title>Data Viz Lab</title>
@@ -35,162 +37,483 @@
 
 <body>
 
-    <!-- Intro con titolo e immagine. Inserire immagine in /media/ con il nome cover.png
+  <!-- Intro con titolo e immagine. Inserire immagine in /media/ con il nome cover.png
     Al posto dei segna posto aggiungere il vostro nome e matricola negli <span> -->
-      <div class="intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text">
-              <h5 class="text-center">UNIMIB - 2021/2022</h5>
-              <h1 class="text-center">L'inquinamento e l'alimentazione: più vicini di quel che pensi</h1>
-              <h4 class="text-center">Un progetto di
-                <span class="name">Dario Galimberti (Matricola)</span>,
-                <span class="name">Paolo Giua (Matricola)</span>,
-                <span class="name">Sara Nardi (Matricola)</span> e
-                <span class="name">Eleonora Rossi (Matricola)</span></h5>
-              </div>
-          </div>
-          </div>
-      </div>
-
-
-
-      <!-- Primo blocco di testo -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text">
+          <h5 class="text-center">UNIMIB - 2021/2022</h5>
+          <h1 class="text-center">L'inquinamento e l'alimentazione: più vicini di quel che pensi</h1>
+          <h4 class="text-center">Un progetto di
+            <span class="name">Dario Galimberti (Matricola)</span>,
+            <span class="name">Paolo Giua (Matricola)</span>,
+            <span class="name">Sara Nardi (Matricola)</span> e
+            <span class="name">Eleonora Rossi (Matricola)</span></h5>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- Primo blocco di testo -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h3>Introduzione</h3>
+        <p>
+          Quanto inquina ciò che mangiamo? E quale parte del processo produttivo che porta gli alimenti sulla nostra
+          tavola impatta maggiormente sulle emissioni di gas serra?<br>
+          È da queste domande che nasce il presente progetto.
+        </p>
+        <p>
+          I principali gas serra presenti in natura sono vapore acqueo, anidride carbonica, protossido di azoto, metano
+          ed
+          esafluoruro di zolfo.
+          A seconda della radioattività e della concentrazione in atmosfera, ogni gas serra ha un preciso valore di GWP
+          (Global Warming Potential). Quest’ultimo è un indice che misura quanto ogni gas contribuisce al riscaldamento
+          globale.
+          Tantissime attività umane concorrono alle emissioni di tali gas e, conseguentemente, al riscaldamento globale.
+          Pertanto, iniziando effettuando un’analisi della distribuzione delle emissioni di gas serra tra i vari settori
+          produttivi, si è proseguito studiando l’impatto dell’industria alimentare e, infine, si è indagata l’esistenza
+          di differenze significative tra i vari stadi della produzione e dei singoli alimenti.
 
-
-      <!-- Prima Visualizzazione -->
-      <div class="container viz">
-        <div class="row">
-            <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
-            Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
-            <div class='tableauPlaceholder col-centered' id='viz1654007840379' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz1&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CartellaViz1&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz1&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1654007840379');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        </div>
+        </p>
       </div>
+    </div>
+  </div>
 
-
-
-
-      <!-- Secondo blocco di testo -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+  <!-- Primo blocco di testo -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h3>Distribuzione delle emissioni di gas serra tra i vari settori</h3>
+        <p>
+          Al fine di affrontare la tematica proposta nel presente elaborato e di rispondere quindi alle domande
+          precedentemente
+          formulate, si è ritenuto opportuno iniziare studiando la distribuzione delle emissioni di inquinanti delle
+          varie
+          industrie. Questa analisi è stata effettuata utilizzando il dataset “env_air_gge_1_Data.csv”, messo a
+          disposizione
+          dall'Agenzia Europea dell'ambiente (EAA).
+        </p>
+        <p>
+          Quest’ultimo è stato opportunamente pulito eliminando caratteri inseriti erroneamente, campi poco
+          significativi per
+          gli obiettivi di analisi, campi contenenti un’elevata quantità di valori nulli o righe di campi da
+          considerarsi
+          ridondanti. In particolare, ad esempio, sono state rimosse le righe della colonna “SRC_CRF” contenenti dati
+          relativi a
+          tutti i settori complessivamente.
+        </p>
+        <p>
+          I dati a disposizione sono stati poi utilizzati per la creazione di un’infografica, in particolare di un
+          Linear Bubble
+          Chart. Quest’ultimo viene utilizzato solitamente per NON HO TYROVATO NULLA. Inoltre, la peculiarità di è data
+          dal
+          fatto che l'area di ogni cerchio è proporzionale al quadrato del raggio di ciascuno.
+        </p>
+        <p>
+          Al fine della costruzione del Linear Bubble Chart precedentemente citato, innanzitutto, sono stati scelti gli
+          assi di
+          riferimento: sull’ asse delle ascisse sono state poste le emissioni di gas serra in migliaia di tonnellate e
+          sull’asse
+          delle ordinate sono state collocate le nazioni a cui fanno riferimento tali emissioni.
+        </p>
+        <p>
+          In particolare, osservando l’infografica dall’alto verso il basso, le nazioni sono state ordinate in modo
+          crescente
+          per somma di emissione di gas serra in tutti i valori di nazione.
+        </p>
+        <p>
+          Altresì, si è ritenuto importante mettere in evidenza lo zero, attraverso una linea, in quanto esso
+          costituisce un
+          riferimento fondamentale per una più agevole interpretazione e leggibilità del grafico.
+        </p>
+        <p>
+          L’infografica è stata realizzata utilizzando quattro diversi colori (rosa, giallo, blu e grigio) per il
+          riempimento
+          dei cerchi, scelti in modo da distinguere i vari settori che producono gas serra. Sebbene la scelta dei colori
+          assegnati sia stata casuale, è stata posta attenzione alle persone affette da daltonismo, attesa la loro
+          difficoltà
+          nel distinguere i colori rosso e verde insieme.
+        </p>
+        <p>
+          Inoltre, la decisione di utilizzare colori poco accesi per tutti i settori, a parte per “agricoltura e
+          allevamento”
+          (blu elettrico), è stata compiuta allo scopo di mettere in evidenza quanto tale settore contribuisca alle
+          emissioni.
+          Infatti, è stato possibile notare che queste ultime sono molto più elevate rispetto a quelle degli altri
+          settori (ad
+          esempio, nel 2010, il settore agricolo francese ha prodotto emissioni addirittura pari a circa 153 mila
+          migliaia di
+          tonnellate, mentre il settore dei processi industriali 108 mila, quello relativo alla gestione dei rifiuti 42
+          mila e
+          che quello inerente all’uso del suolo e alla silvicoltura addirittura è un settore che contribuisce alla
+          diminuzione
+          delle emissioni, - 71 mila migliaia di tonnellate).
+        </p>
+        <p>
+          Pertanto, da questa prima visualizzazione è emerso che “agricoltura e allevamento” ha un grosso impatto sulle
+          emissioni, a prescindere dalla nazione alla quale si faccia riferimento. In altre parole, è errato pensare che
+          l'alimentazione abbia un grosso impatto sulle emissioni soltanto perché alcune nazioni emettono per il settore
+          alimentare molto di più rispetto ad altre, in quanto, al contrario, quasi tutte le nazioni hanno una grossa
+          emissione
+          dovuta al settore alimentare.
+        </p>
       </div>
+    </div>
+  </div>
+
+  <!-- Prima Visualizzazione -->
+  <div class="container viz">
+    <div class="row">
+      <div class='tableauPlaceholder' id='viz1656020570910' style='position: relative'><noscript><a href='#'><img
+              alt='Dashboard 1 '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz1_16545542693690&#47;Dashboard1&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='CartellaViz1_16545542693690&#47;Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz1_16545542693690&#47;Dashboard1&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object></div>
+      <script
+        type='text/javascript'>                    var divElement = document.getElementById('viz1656020570910'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '777px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p>
+          A questo punto, si ritiene doveroso precisare che, nonostante nel dataset fossero presenti sei diversi tipi di
+          settori, nella realizzazione del grafico ne sono stati inclusi soltanto quattro. Infatti, il settore “Other
+          sectors”
+          non è stato considerato, in quanto i valori di emissione ad esso associati erano tutti pari a zero.
+        </p>
+        <p>
+          Infine, il settore relativo all’energia è stato escluso dalla visualizzazione, in quanto associato a valori
+          talmente
+          elevati di emissioni da non permettere di apprezzare il contributo alle emissioni degli altri settori. Tale
+          evidenza
+          si può evincere dalla Figura 1.
+        </p>
+        <img src="media/prima-viz-con-energia.png" />
+        <p>Come precedentemente accennato, i settori per i quali si sono messe in evidenza le emissioni di gas serra
+          sono il
+          settore relativo all’agricoltura e all’allevamento, quello che si riferisce alla gestione dei rifiuti, quello
+          dei
+          processi industriali e, infine, quello che concerne l’utilizzo del suolo e la silvicoltura.
+        </p>
+        <p>
+          In riferimento ai settori considerati, si ritiene doveroso fornire una spiegazione di cosa essi comprendano:
+          <ul>
+            <li>Agricoltura e allevamento<br>
+              Il presente settore include le emissioni prodotte da fermentazione enterica, gestione del letame,
+              coltivazione del
+              riso, terreni agricoli, combustione in campo di residui agricoli, calcinazione e applicazione di urea e
+              altri
+              fertilizzanti che contengono carbonio.</li>
+
+            <li>Gestione dei rifiuti<br>
+              Il settore dei rifiuti comprende: smaltimento dei rifiuti solidi, incenerimento e combustione all'aperto,
+              trattamento
+              biologico dei rifiuti solidi e trattamento e scarico delle acque reflue. In particolare, i rifiuti citati
+              sono sia
+              rifiuti industriali, sia rifiuti urbani.</li>
+
+            <li>Processi industriali<br>
+              In generale, il settore relativo ai processi industriali comprende le emissioni derivanti dall’industria
+              chimica,
+              metallurgica, alimentare e mineraria. In particolare, rientrano in questo settore i sottoprodotti o le
+              emissioni
+              fuggitive che provengono da processi industriali, le emissioni rilasciate contemporaneamente dal processo
+              produttivo
+              e
+              dalla combustione, quelle derivanti i dall'utilizzo di solventi nell'applicazione di vernici, sgrassaggio e
+              lavaggio
+              a
+              secco, produzione o lavorazione di prodotti chimici, quelle prodotte da applicazioni mediche, esplosivi, usi
+              di
+              cemento, calce e altri carbonati, acido adipico, acido nitrico, ammoniaca, metano . Inoltre, tale settore
+              include
+              anche le emissioni derivanti dalla produzione di ferro e acciaio, di alluminio, di fluoro chimici.</li>
+
+            <li>Uso del suolo e silvicoltura<br>
+              Il settore relativo all’utilizzo del suolo e la silvicoltura comprende le emissioni ridotte grazie alle
+              foreste.
+              Inoltre, include le emissioni prodotte dai terreni di coltivazione, dai pascoli, dalle zone umide e da
+              insediamenti
+              HWP.</li>
+          </ul>
+        </p>
+        <p>
+          Infine, allo scopo di rendere maggiormente fruibile l’infografica proposta, si conduce un’analisi dettagliata
+          dell’utilizzo della stessa, con la quale è possibile:
+          <ul>
+            <li>mettere in evidenza i valori delle emissioni relative ad ogni settore, preso singolarmente, cliccando con il
+              mouse
+              sulla legenda relativa ai settori.</li>
+            <li>vedere il cambiamento nel tempo dei valori delle emissioni, utilizzando la barra di navigazione posto in
+              basso.</li>
+            <li>passare con il mouse su un singolo cerchio e ottenere così le relative informazioni riguardanti il valore
+              preciso di
+              emissione, l’anno di riferimento, il settore di appartenenza e la relativa nazione.</li>
+            <li>Evidenziare, cliccando su un singolo cerchio, le emissioni prodotte da una singola nazione, relativamente a
+              tutti i
+              settori considerati. Alternativamente, selezionare una singola nazione scegliendola nell’elenco presente a
+              sinistra.</li>
+            <li>Effettuare uno zoom del grafico, in modo da osservare agevolmente anche punti di piccole dimensioni e, in
+              generale,
+              migliorare l’esplorazione del grafico, attraverso la barra degli strumenti della vista in alto a sinistra.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondo blocco di testo -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h3>Distribuzione dei gas serra nelle fasi dell'industria alimentare</h3>
+        <p>
+          In seguito all’analisi riguardante la distribuzione delle emissioni di gas serra tra i vari settori, è stata posta attenzione sul settore alimentare, dato il suo inaspettato impatto ambientale.
+        </p>
+        <p>
+          Pertanto, si è provveduto ad analizzare in quali fasi dell’industria alimentare è distribuito l’inquinamento,
+          servendosi di un dataset presente sul sito ourworldindata.org. Quest’ultimo è costituito da dati che coprono un
+          periodo temporale di 25 anni (dal 1990 al 2015) e suddivide le emissioni di gas serra in base alle fasi produttive.
+          Tali fasi riguardano l’intero processo della filiera produttiva, partendo dall’uso del suolo fino ad arrivare al
+          consumo finale dei cibi. Le varie fasi produttive che abbiamo preso in considerazione sono:
+        <ul>
+          <li>
+            Cambiamento dell’uso del suolo: emissioni di gas serra derivanti da azioni di deforestamento per adibire il suolo ad
+            attività agricole o di allevamento. Un esempio di inquinamento è l’incendio doloso delle foreste, che trasforma il
+            carbonio in anidride carbonica.
+          </li>
+          <li>
+            Coltivazione e allevamento: tale valore è fortemente influenzato dall’utilizzo di fertilizzanti chimici così come
+            dalla combustione di residui agricoli ole emissioni di metano nella risicoltura. Per quanto riguarda l’allevamento
+            una fonte di inquinamento preoccupante deriva dalle deiezioni sia solide che liquide, che se non smaltite in modo
+            corretto portano ad un aumento dei gas serra. In questa categoria rientra pure il consumo di carburante dei mezzi
+            agricoli.
+          </li>
+          <li>
+            Gestione degli scarti: Una parte importante dell’inquinamento riferito all’industria agro-alimentare dipende proprio
+            dallo spreco cibo e dagli scarti dei prodotti alimentari che, con la loro decomposizione, portano all’aumento dei
+            gas serra.
+          </li>
+          <li>
+            Imballaggio: l’inquinamento dipende sia dalla produzione degli involucri ma anche dai rifiuti che vanno ad inquinare
+            l’ambiente; su tutti l’utilizzo di plastica monouso e lattine.
+          </li>
+          <li>
+            Trasporto: inquinamento derivante dal trasporto di prodotti alimentari. Si considerano sia i trasferimenti nazionali
+            che quelli internazionali. I mezzi di trasporto riguardano sia i trasferimenti via stradale che quelli per rotaia,
+            via acqua o via aerea.
+          </li>
+          <li>
+            Lavorazione: sono indicate tutte le emissioni di gas serra che provengono dai processi industriali dei prodotti
+            alimentari; ovvero l’insieme di processi che trasformano le materie prime in ingresso in prodotti pronti per essere
+            venduti al consumatore finale, escluso il processo di imballaggio.
+          </li>
+          <li>
+            Vendita al dettaglio: il consumo legato alla vendita del cibo deve essere preso in considerazione visto il suo
+            deciso aumento. In questa categoria rientrano principalmente i consumi legati ai sistemi di refrigerazione per
+            mantenere i prodotti freschi; seppur in minor quantità influiscono anche i sistemi di ventilazione ed illuminazione.
+          </li>
+          <li>
+            Consumo di cibo: inquinamento derivante dai consumi casalinghi per prepare i cibi o conservarli; in questa categoria
+            rientrano il consumo di gas dei fornelli o il consumo dato dalla refrigerazione degli alimenti.
+          </li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container viz">
+    <div class="row">
+      <div class='tableauPlaceholder' id='viz1656023263027' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz2_16545962998560&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CartellaViz2_16545962998560&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz2_16545962998560&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656023263027');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p>
+          Al fine della visualizzazione di tali dati, è stata utilizzata una dashboard interattiva composta da due grafici: un grafico ad area in pila e un grafico a linea.
+        </p>
+        <p>
+          L’interazione con questi ultimi consiste nella possibilità di poter evidenziare un settore piuttosto che un altro, selezionandolo attraverso uno dei due grafici o mediante legenda.
+        </p>
+        <p>
+          A colpo d’occhio è possibile constatare che entrambi i grafici utilizzano la stessa palette di colori, la quale viene esplicitata nella legenda. sono stati scelti in maniera semicasuale, in quanto dove possibile si è cercato di usare colori che rispecchiano la fase produttiva indicata(poco vero, solo per due, perché per gli altri non c’è un colore, mi sembra un po’ una forzatura). In particolare, si è preferito utilizzare colori tenui in modo da agevolare persone che soffrono di patologie visive, come, ad esempio, il daltonismo. (NON è VERO, PERCHE I DALTONICI NON HANNO PROBLEMI PER COLORI FORTI O DEBOLI)
+        </p>
+        <p>
+          A questo punto della trattazione, si ritiene importante sottolineare lo scopo della realizzazione dei presenti grafici: il primo serve per enfatizzare la variazione di una grandezza nel tempo, mentre il secondo viene anche (anche nel senso che vengono anche loro usati per enfatizz la variaz di una grandezza nel tempo, giusto?) utilizzato per mostrare la relazione di parti rispetto ad un insieme.
+        </p>
+        <p>
+          Inoltre, il grafico ad area in pila è basato su un grafico a linee, con la caratteristica che l'area tra una linea e un’altra viene colorata. In particolare, la variante in pila prevede che per ogni valore di x l’altezza dell’area sia pari al valore y che si vuole rappresentare. In questo modo, la visualizzazione appare come una serie di strisce di varia larghezza, i cui colori indicano le fasi produttive alle quali fanno riferimento i valori delle emissioni negli anni considerati. Inoltre, tali fasi produttive sono state ordinate dalla più inquinante alla meno inquinante, al fine di mettere in risalto come la maggior parte delle emissioni (all’incirca i ⅔) siano causate dalle fasi denominate “coltivazione e allevamento” e “sfruttamento del suolo”.
+        </p>
+        <p>
+          Quest’ultima caratteristica consente di evidenziare alcune importanti peculiarità, molto utili per l’analisi condotta:ù
+          <ul>
+            <li>
+              Per ogni anno, l’altezza dell’area di tutto il fascio di strisce colorate rappresenta l’inquinamento complessivo di quello specifico anno. Questo rende maggiormente semplice il confronto tra le emissioni da un anno all’altro. Infatti, ad esempio, è possibile notare facilmente come l’inquinamento alimentare sia aumentato notevolmente dal 1990 al 2015;
+            </li>
+            <li>
+              Lo stesso concetto del punto precedente vale anche per le singole strisce colorate. Infatti, è possibile comprendere agevolmente l’aumento o meno delle emissioni, osservando i restringimenti e gli allargamenti delle linee che delimitano la singola area colorata. Ad esempio, è possibile evincere che, mentre l’inquinamento dovuto dall’uso del suolo si è ridotto negli anni, tutte le altre fasi di produzione sono aumentate. Pertanto, in generale, c’è stato un aumento complessivo delle emissioni.
+            </li>
+          </ul>
+        </p>
+        <p>
+          Al fine di studiare l’aumento o il decremento percentuale delle emissioni di gas serra rispetto al 1990, si ritiene di doveroso analizzare il secondo grafico creato, il grafico a linee. Infatti, esso permette di constatare che la vendita al dettaglio ha avuto l’incremento percentuale maggiore rispetto al 1990 (+ 293%).
+        </p>
+        <p>
+          Osservando congiuntamente i grafici proposti, è possibile evincere che la maggior parte dell’inquinamento deriva dalla fase denominata “coltivazione e allevamento”, emettendo ogni anno più di 6 miliardi di tonnellate di gas serra. Tuttavia, quest’ultima ha un incremento percentuale soltanto del 14%, a differenza della vendita al dettaglio che è caratterizzata da un aumento percentuale nettamente superiore.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terzo blocco di testo -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h3>Terza Viz</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
 
 
-      <!-- Seconda Visualizzazione -->
-      <div class="container viz">
-        <div class="row">
-          <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
+  <!-- Terza Visualizzazione -->
+  <div class="container viz">
+    <div class="row">
+      <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
           Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
+      <div class='tableauPlaceholder col-centered' id='viz1654008190083' style='position: relative'><noscript><a
+            href='#'><img alt='Dashboard 3 '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz3&#47;Dashboard3&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='CartellaViz3&#47;Dashboard3' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz3&#47;Dashboard3&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='it-IT' />
+          <param name='filter' value='publish=yes' />
+        </object></div>
+      <script
+        type='text/javascript'>                    var divElement = document.getElementById('viz1654008190083'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
 
-          <div class='tableauPlaceholder col-centered' id='viz1654007971914' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CartellaViz2&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz2&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1654007971914');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+
+    <!-- Quarto blocco di testo con le conlusioni-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h3>Conclusioni</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
         </div>
       </div>
+    </div>
 
 
 
 
-      <!-- Terzo blocco di testo -->
+    <div class="howTo">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          <div class="col-md-6 col-md-offset-2">
+
+            <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
+            <h5>Valutazione euristica</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.</p>
+
+            <hr>
+
+            <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
+            <h5>Test utente</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. </p>
+
+            <hr>
+
+            <h5>Modifiche effettuate</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.</p>
+
+            <hr>
+
+            <h5>Questionari psicometrici</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.</p>
+
           </div>
-        </div>
-      </div>
 
-
-      <!-- Terza Visualizzazione -->
-      <div class="container viz">
-        <div class="row">
-          <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
-          Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
-          <div class='tableauPlaceholder col-centered' id='viz1654008190083' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz3&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CartellaViz3&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CartellaViz3&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1654008190083');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      </div>
-
-
-
-
-      <!-- Quarto blocco di testo con le conlusioni-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="howTo">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-md-offset-2">
-
-              <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
-              <h5>Note Metodologiche</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-              <hr>
-
-              <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
-              <h5>Valutazione qualità</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-              <hr>
-
-              <h5>Euristiche considerate</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-              <hr>
-
-              <h5>Test Utente</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-              <hr>
-
-              <h5>Questionari psicometrici</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-
-
-
-              </div>
-
-
-
-
-
-
-            <!-- Inserire i link di google spreadsheet/drive o i link ai file dentro la cartella data (ridotti possibilmente - max 5mb) al posto di # e dare un nome ai dataset.-->
-            <div class="col-md-3 col-md-offset-1 howToSide">
+          <!-- Inserire i link di google spreadsheet/drive o i link ai file dentro la cartella data (ridotti possibilmente - max 5mb) al posto di # e dare un nome ai dataset.-->
+          <div class="col-md-3 col-md-offset-1 howToSide">
             <h5>Dati utilizzati</h5>
             <p><a href="#">Nome e link al dataset</a></p>
             <p><a href="#">Nome e link al dataset</a></p>
@@ -199,13 +522,13 @@
             <h5 id="tools">Strumenti utilizzati</h5>
             <p><a href="#">Nome e link al tool</a></p>
             <p><a href="#">Nome e link al tool</a></p>
-            </div>
           </div>
         </div>
       </div>
-
     </div>
-    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#page-content-wrapper -->
 
 
 
@@ -218,34 +541,35 @@
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="js/ie10-viewport-bug-workaround.js"></script>
   <script>$(document).ready(function () {
-    var trigger = $('.hamburger'),
-    overlay = $('.overlay'),
-    isClosed = false;
-
-    trigger.click(function () {
-      hamburger_cross();
-    });
-
-    function hamburger_cross() {
-
-      if (isClosed == true) {
-        overlay.hide();
-        trigger.removeClass('is-open');
-        trigger.addClass('is-closed');
+      var trigger = $('.hamburger'),
+        overlay = $('.overlay'),
         isClosed = false;
-      } else {
-        overlay.show();
-        trigger.removeClass('is-closed');
-        trigger.addClass('is-open');
-        isClosed = true;
-      }
-    }
 
-    $('[data-toggle="offcanvas"]').click(function () {
-      $('#wrapper').toggleClass('toggled');
+      trigger.click(function () {
+        hamburger_cross();
+      });
+
+      function hamburger_cross() {
+
+        if (isClosed == true) {
+          overlay.hide();
+          trigger.removeClass('is-open');
+          trigger.addClass('is-closed');
+          isClosed = false;
+        } else {
+          overlay.show();
+          trigger.removeClass('is-closed');
+          trigger.addClass('is-open');
+          isClosed = true;
+        }
+      }
+
+      $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+      });
     });
-  });
   </script>
 
 </body>
+
 </html>
