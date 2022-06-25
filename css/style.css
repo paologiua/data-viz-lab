@@ -99,7 +99,7 @@ li {
   padding-bottom: 88px;
 }
 
-.howTo p{
+.howTo p, .howTo li{
   font-size: 16px;
   line-height: 150%;
   padding-bottom: 0px;
@@ -136,6 +136,8 @@ a:hover {
 
 img {
   width: 100%;
+  padding-bottom: 44px !important;
+  padding-top: 44px !important;
 }
 
 table, th, td {
@@ -143,9 +145,47 @@ table, th, td {
 }
 
 .eur-table th {
-  width: 70px;
+  width: 80px;
 }
 
 .user-test-th {
-  width: 80px;
+  min-width: 140px;
+}
+
+.howTo .container {
+  padding: 0 !important;
+}
+
+.howTo p, .howTo h5, .howTo img {
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+}
+
+.howTo table {
+  border: 25px solid transparent;
+}
+
+@media (max-width: 991px) {
+  @media (min-width: 768px) {
+    .howTo .col-md-6 {
+      padding-right: 45px !important;
+    }
+  }
+
+  .howToSide {
+    padding-top: 30px;
+  }
+}
+
+.table-title {
+  text-align: center;
+  color: black;/*  rgb(70, 109, 180); */
+  font-weight: bold;
+  position: relative;
+  top: -30px;
+}
+
+.sub-title  {
+  font-weight: bold;
+  padding-top: 20px;
 }
