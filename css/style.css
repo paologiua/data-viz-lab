@@ -137,3 +137,15 @@ a:hover {
 img {
   width: 100%;
 }
+
+table, th, td {
+  padding: 5px;
+}
+
+.eur-table th {
+  width: 70px;
+}
+
+.user-test-th {
+  width: 80px;
+}

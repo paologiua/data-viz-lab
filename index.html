@@ -391,21 +391,42 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <h3>Terza Viz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+        <p>
+          L’ultimo livello di approfondimento della presente analisi è quello inerente allo studio dell’impatto ambientale di una selezione di cibi e bevande. Utilizzando la piattaforma “Kaggle”, si è opportunamente scaricato un dataset relativo a 43 prodotti alimentari e contenente informazioni inerenti alle emissioni totali e a quelle legate ad ogni fase della produzione di ciascuno di essi. 
+        </p>
+        <p>
+          Ai fini della creazione di una visualizzazione che potesse mettere a confronto un così elevato numero di prodotti alimentari, che consentisse di rispondere agli obiettivi di analisi e che contemporaneamente fosse facilmente navigabile, si è provveduto a raggruppare i prodotti alimentari considerati in alcune macrocategorie: 
+          <ul>
+            <li>Bevande</li>
+            <li>Carne</li>
+            <li>Cereali</li>
+            <li>Derivati animali</li>
+            <li>Derivati vegetali</li>
+            <li>Frutta</li>
+            <li>Legumi</li>
+            <li>Oli</li>
+            <li>Pescato</li>
+            <li>Tuberi</li>
+            <li>Verdura</li>
+          </ul>
+        </p>
+        <p>
+          In particolare, la rappresentazione delle emissioni totali di ogni categoria è stata studiata utilizzando un grafico denominato in letteratura “Bubble Plot”. In generale, quest’ultimo viene utilizzato per mettere a confronto variabili categoriche, determinare se almeno tre variabili numeriche sono o meno correlate tra loro o condividono un qualche tipo di schema o per evidenziare tendenze nel tempo. Nel presente caso, l’area delle bolle fa riferimento al valore delle emissioni, per permettere un facile confronto visivo tra le varie macrocategorie. 
+        </p>
+        <p>
+          Inoltre, si è calcolata la media delle emissioni totali e la deviazione standard, servendosi dell’interattività della visualizzazione proposta. Infatti, è possibile accedere a tali informazioni scorrendo col mouse sui vari cerchi.
+        </p>
+        <p>
+          Osservando il grafico, è possibile evincere come carne, pescato e prodotti di origine animali siano le macrocategorie che inquinano maggiormente, mentre, al contrario, frutta, verdura, legumi e tuberi siano quelle a minor impatto.
+        </p>
+        <p>
+          Inoltre, si ritiene importante sottolineare che ciascuna di esse racchiude i prodotti appartenenti alla stessa categoria, in modo da cogliere le differenze di impatto ambientale anche tra cibi “simili”: un esempio notevole di questo si trova nella categoria “Carne”: cliccando su di essa si rende possibile il confronto di Pollo, Manzo, Agnello, Maiale e Vitello.
+        </p>
+        <p>
+          Infatti, l’infografica presenta un secondo bubble plot in cui sono rappresentate le emissioni totali di ogni alimento racchiuso in quella determinata macrocategoria. 
+        </p>
+        <p>
+          Inoltre, cliccando su un singolo alimento viene mostrato il terzo grafico: un “Lollipop Chart”, in cui è rappresentato il valore di emissioni in Kg per kg di prodotto per ogni fase produttiva. 
         </p>
       </div>
     </div>
@@ -479,28 +500,90 @@
 
             <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
             <h5>Valutazione euristica</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur.</p>
+            <p>
+              La valutazione euristica consiste nel far interagire gli utenti con le visualizzazioni da noi progettate. L’indagine permette sia di studiare il comportamento dei diversi utenti mentre interagiscono con il grafico e allo stesso tempo, chiedendo a loro di pensare e dire a voce alta ciò che fanno, è possibile ricevere feedback interessanti che possono portare a modifiche del grafico per renderlo maggiormente comprensibile e/o fruibile.<br>
+              Una valutazione euristica è considerata ottima se si riescono a far emergere un elevato numero di problemi riguardanti la fruibilità dei grafici.<br>
+              L’indagine è stata rivolta a 6 utenti; il responso ottenuto è il seguente:<br>
+            </p>
+
+            <table class="eur-table">
+              <tr>
+                <th>Utente 1</th>
+                <td>Comprende subito la natura dei grafici interattivi, tuttavia non sfrutta a pieno le varie possibilità che i grafici offrono, come l’utilizzo della legenda per evidenziare le informazioni.</td>
+              </tr>
+              <tr>
+                <th>Utente 2</th>
+                <td>Inizialmente non comprende la struttura interattiva del grafico. Una volta presa dimestichezza riesce a comprendere le funzionalità base; l’utente non comprende la possibilità di utilizzare la selezione multipla per filtrare più elementi.</td>
+              </tr>
+              <tr>
+                <th>Utente 3</th>
+                <td>Ha compreso tutte le funzionalità, ad eccezione della terza visualizzazione, dove ha applicato la selezione multipla utilizzando la legenda al posto della selezione con il mouse;relativamente al primo grafico, non ha fatto scorrere gli anni, ma ha selezionato nel menù a tendina l’anno 2016.</td>
+              </tr>
+              <tr>
+                <th>Utente 4</th>
+                <td>Qualche difficoltà a comprendere la struttura interattiva del terzo grafico ma una volta compresa non incontra difficoltà a usarlo. Non segnala difficoltà nella comprensione o nell’utilizzo dei primi due grafici.</td>
+              </tr>
+              <tr>
+                <th>Utente 5</th>
+                <td>Comprende l’utilità e l’interattività della terza visualizzazione dopo che gli viene spiegata. Non comprende pienamente il significato delle fasi produttive associate ai grafici 2 e 3.</td>
+              </tr>
+              <tr>
+                <th>Utente 6</th>
+                <td>Non apprezza l’ordinamento crescente del primo grafico in quanto lo rende meno chiaro. Nel terzo grafico non riesce a comprendere del tutto le capacità interattive che la visualizzazione può offrire.</td>
+              </tr>
+            </table>
 
             <hr>
 
             <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
             <h5>Test utente</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum. </p>
+            <p>
+              La seconda indagine prevede l’esecuzione di compiti specifici agli utenti che interagiscono con i grafici . Dati 3 tasks assegnati con obiettivi diversi l’uno dall’altro si valuta sia l’efficienza (tempo che ci mette l’utente a terminare il compito) ed anche l’efficacia (esecuzione corretta del task assegnato). Si tratta di un test che ci permette di fare un’analisi quantitativa di come i soggetti esterni si rapportano con il grafico che hanno davanti.
+              <table>
+                <tr>
+                  <th></th>
+                  <th>Utente 1</th>
+                  <th>Utente 1</th>
+                </tr>
+                <tr>
+                  <th class="user-test-th">Task 1<br>
+                      Visualizzazione 1
+                  </th>
+                  <td>Inizialmente non comprende la struttura interattiva del grafico. Una volta presa dimestichezza riesce a comprendere le funzionalità base; l’utente non comprende la possibilità di utilizzare la selezione multipla per filtrare più elementi.</td>
+                  <td>Inizialmente non comprende la struttura interattiva del grafico. Una volta presa dimestichezza riesce a comprendere le funzionalità base; l’utente non comprende la possibilità di utilizzare la selezione multipla per filtrare più elementi.</td>
+                </tr>
+                <tr>
+                  <th class="user-test-th">Task 2<br>
+                      Visualizzazione 2
+                  </th>
+                  <td>Ha compreso tutte le funzionalità, ad eccezione della terza visualizzazione, dove ha applicato la selezione multipla utilizzando la legenda al posto della selezione con il mouse;relativamente al primo grafico, non ha fatto scorrere gli anni, ma ha selezionato nel menù a tendina l’anno 2016.</td>
+                  <td>Inizialmente non comprende la struttura interattiva del grafico. Una volta presa dimestichezza riesce a comprendere le funzionalità base; l’utente non comprende la possibilità di utilizzare la selezione multipla per filtrare più elementi.</td>
+                </tr>
+                <tr>
+                  <th class="user-test-th">Task 3<br>
+                      Visualizzazione 3
+                  </th>
+                  <td>Qualche difficoltà a comprendere la struttura interattiva del terzo grafico ma una volta compresa non incontra difficoltà a usarlo. Non segnala difficoltà nella comprensione o nell’utilizzo dei primi due grafici.</td>
+                  <td>Inizialmente non comprende la struttura interattiva del grafico. Una volta presa dimestichezza riesce a comprendere le funzionalità base; l’utente non comprende la possibilità di utilizzare la selezione multipla per filtrare più elementi.</td>
+                </tr>
+              </table>
+            </p>
+            <p>
+              I 3 compiti assegnati ai nostri utenti sono  di natura diversa; a seconda della tipologia di grafico con cui ci si interfacciava e a seconda della dimestichezza dell’utente con grafici interattivi e la tecnologia in generale sono stati raggiunti diversi risultati. Il secondo task è quello che richiedeva meno tempo di esecuzione; una volta compreso il grafico sulla variazione temporale si giungeva subito alla soluzione. I task con riferimento alla prima e alla terza visualizzazione hanno richiesto tempo maggiore, poiché richiedevano un livello di interazione maggiormente alto con il grafico rispetto al secondo task, tuttavia buona parte degli utenti sono riusciti a svolgere le loro mansioni rimanendo entro un minuto di tempo.
+            </p>
+            <img src="media/user-test.png">
+            <p>
+              Le task sono state completate tutte in modo corretto, tuttavia in alcuni casi è stato necessario un aiuto esterno per permettere agli utenti di svolgere i compiti a loro assegnati. Come si può notare dal grafico sottostante, il task associato alla terza visualizzazione è stato il più difficile da comprendere, in quanto il grafico è maggiormente complesso. Nel primo grafico gli aiuti sono stati dati sulla selezione della nazione di riferimento mentre nel secondo riguardo al come selezionare la specifica fase di produzione.
+            </p>
+            <img src="media/user-test2.png">
 
             <hr>
 
             <h5>Modifiche effettuate</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur.</p>
+            <p>
+              Dopo i feedback ricevuti dagli utenti abbiamo deciso di attuare delle modifiche alle nostre visualizzazioni per renderle maggiormente comprensibili ed agevoli per gli utenti futuri.<br>
+              Nella prima visualizzazione alcuni utenti non hanno capito il modo in cui erano ordinati gli stati, per questo abbiamo deciso di arricchire la visualizzazione aggiungendo come contesto il motivo per cui gli stati sono ordinati in tal modo, così che il grafico diventa maggiormente comprensibile così come diventa più facile capire l’obiettivo della nostra visualizzazione. Il colore associato al settore “Uso del suolo e silvicoltura” portava a focalizzarsi su quella variabile oltre all’agricoltura; dato che si vuole sottolineare l’impatto dei gas serra associati al settore primario si è deciso di rappresentare l’uso del suolo con un colore più tenue.
+            </p>
 
             <hr>
 
